@@ -1,5 +1,4 @@
-# base-init
-Boilerplate repository for playground projects
+# React reduc multi-step form using react-router
 
 ```
 npm install
