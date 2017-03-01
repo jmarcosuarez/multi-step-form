@@ -1,4 +1,4 @@
-# React reduc multi-step form using react-router
+# React redux multi-step form using react-router
 
 ```
 npm install
