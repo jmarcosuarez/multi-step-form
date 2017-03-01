@@ -1,9 +1,10 @@
 import React from 'react';
 import { IndexLink, Link } from 'react-router';
-import './Header.css';
+import styles from './App.css';
 
-export const Header = () => (
-  <div>
+const Header = () =>
+  <header className={styles.info}>
+    <p>LOGO</p>
     <IndexLink to="/" activeClassName="route--active">
       Home
     </IndexLink>
@@ -11,7 +12,6 @@ export const Header = () => (
     <Link to="/signup" activeClassName="route--active">
       SignUp
     </Link>
-  </div>
-);
+  </header>;
 
 export default Header;
