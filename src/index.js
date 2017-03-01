@@ -4,7 +4,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { Provider } from 'react-redux';
 import configureStore from './stores/configureStore';
-import * as actions from './components/Stream/StreamActions';
+import * as actions from './modules/SignUpForm/SignUpFormActions';
 import routes from './routes';
 import DevTools from './stores/DevTools';
 

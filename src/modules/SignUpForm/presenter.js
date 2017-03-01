@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Stream({ tracks = [] }) {
+function SignUpForm({ tracks = [] }) {
   return (
     <div>
-      <p>This is Stream</p>
+      <p>This is SignUpForm</p>
       {
         tracks.map((track, key) => {
           return <div className="track" key={key}>{track.title}</div>;
@@ -13,4 +13,4 @@ function Stream({ tracks = [] }) {
   );
 }
 
-export default Stream;
+export default SignUpForm;

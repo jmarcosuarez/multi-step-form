@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import App from './components/App';
-import Home from './components/Home';
-import Stream from './components/Stream';
+import App from './modules/App';
+import Home from './modules/Home';
+import SignUpForm from './modules/SignUpForm';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <Route path="/stream" component={Stream} />
+    <Route path="/signup" component={SignUpForm} />
   </Route>
 );

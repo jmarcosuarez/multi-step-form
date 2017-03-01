@@ -1,8 +1,8 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as actions from './StreamActions';
-import Stream from './presenter';
+import * as actions from './SignUpFormActions';
+import SignUpForm from './presenter';
 
 function mapStateToProps(state) {
   const tracks = state.track;
@@ -15,4 +15,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Stream);
+export default connect(mapStateToProps, mapDispatchToProps)(SignUpForm);

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import track from '../components/Stream/StreamReducer';
+import track from '../modules/SignUpForm/SignUpFormReducer';
 
 export default combineReducers({
   track,
