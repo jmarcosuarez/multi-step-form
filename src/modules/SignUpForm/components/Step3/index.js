@@ -3,7 +3,7 @@ import Input from '../../../../components/Input';
 import Button from '../../../../components/Button';
 import styles from './Step3.css';
 
-class Step3 extends Component {
+class Step3 extends Component {/* eslint react/prefer-stateless-function: 0 */
   render() {
     return (
       <div className={styles.step3}>

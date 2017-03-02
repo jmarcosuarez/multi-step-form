@@ -5,11 +5,7 @@ import Step1 from './components/Step1';
 
 import styles from './SignUpForm.css';
 
-class List extends React.Component {
-
-  componentDidUpdate() {
-  }
-
+class List extends React.Component {/* eslint react/prefer-stateless-function: 0 */
   render() {
     return (
       <div className={styles.signupform}>
