@@ -1,18 +1,37 @@
-import React from 'react';
-import { bindActionCreators } from 'redux';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import * as actions from './SignUpFormActions';
-import SignUpForm from './presenter';
+import { bindActionCreators } from 'redux';
+import Step1 from './components/Step1';
+
+import styles from './SignUpForm.css';
+
+class List extends React.Component {
+
+  componentDidUpdate() {
+  }
+
+  render() {
+    return (
+      <div className={styles.signupform}>
+        <p>This is SignUpForm</p>
+        {this.props.children || <Step1 />}
+      </div>
+    );
+  }
+}
 
 function mapStateToProps(state) {
-  const tracks = state.track;
   return {
-    tracks,
+
   };
 }
+
 function mapDispatchToProps(dispatch) {
   return {
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignUpForm);
+List.propTypes = {
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(List);

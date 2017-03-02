@@ -4,9 +4,9 @@ import styles from './App.css';
 const Footer = () =>
   <footer className={styles.info}>
     <ul>
-      <li>Search Tool Prototyping</li>
-      <li>Trips App</li>
-      <li>Code in <a href="https://github.com/jmarcosuarez/trips">github</a></li>
+      <li>Multi Step Form</li>
+      <li>App</li>
+      <li>Code in <a href="https://github.com/jmarcosuarez/multi-step-form">github</a></li>
     </ul>
   </footer>;
 
