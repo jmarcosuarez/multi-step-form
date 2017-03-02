@@ -1,19 +1,11 @@
 import { createStore, applyMiddleware, compose } from 'redux';
-// import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { browserHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
 import rootReducer from '../reducers';
 import DevTools from './DevTools';
 
-// const logger = createLogger();
 const router = routerMiddleware(browserHistory);
-
-// const createStoreWithMiddleware = applyMiddleware(thunk, router, logger)(createStore);
-
-// export default function configureStore(initialState) {
-//   return createStoreWithMiddleware(rootReducer, initialState);
-// }
 
 const enhancer = compose(
   // Middleware you want to use in development:
